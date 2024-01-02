@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="left_top_sidebar">
+        <a href="index.html" id="spotify"><img src='logo.svg' id="logo"></a>   
+        <br>
+        <br>
+        <div id="home">
+            <a href="index.html" id="homeAnchor"><img id="homePic" src="home.svg"></a>
+            <a href="index.html" id="homeText">Home</a>
+        </div> 
+        <br>
+        
+        <div id="search">
+            <a href="index.html" id="searchAnchor"><img id="searchPic" src="search.svg"></a>
+            <a href="index.html" id=searchText>Search</a>
+        </div>
+    </div>
+    <div id="left_bottom_sidebar">
+        <div id="library"><img src="lib.svg" id="libPic">Your library
+            <a href="addition" id="plus">+</a>
+        </div>
+        <br>
+        <div id="createPlaylist">
+            <section id="section1">
+                <span id="text1">Create your first playlist</span>
+                <br>
+                <span id="text2">It is easy, we'll help you</span>
+                <br>
+                
+                <form action="index.html" id="form1">
+                    <button id="createButtonPlaylist">Create Playlist</button>
+                </form>
+            </section>
+            <br>
+            <section id="section2">
+                <span id="text3">Find podcasts to follow</span>
+                <br>
+                <span id="text4">We'll keep you updated on new episodes</span>
+                <br>
+                
+                <form action="https://open.spotify.com/genre/podcasts-web" id="form2">
+                    <button id="podcast">Browse Podcasts</button>
+                </form>
+            </section>
+        </div>
+        <br>
+        <br>
+    <div id="contact">
+        <p>Legal  PrivacyCenter  PrivacyPolicy
+        Cookies AboutAds Accessibility
+        Cookies</p>
+    </div>
+
+    </div>
+    <div id="premium">
+        <p id="premiumLine1">Preview of Spotify</p>
+        <p id="premiumLine2">Get Exclusive content of Spotify with the premium options. Avail Soon!!</p>
+        <button onclick=premiumPopOpen() id="getPremium">Get Premium</button>
+        <div id="premiumPopUpBackground"></div>
+        <div id="popupWindow">
+            <button onclick= premiumPopClose() id="closePremium">X</button>
+            WELCOME TO SPOTIFY PREMIUM  
+            <div id="premiumBox1">
+                <span id="Premiumtext1">3 months for ₹199</span>
+                <br>
+                <span id="Premiumtext2">One-Time plans available</span>
+                <br>
+                <span id="Premiumtext3">Individual</span>
+                <br>
+                <span id="Premiumtext4">₹119/month after offer period</span>
+                <br>
+                <span id="Premiumtext5">1 account</span>
+                <span id="Premiumtext6">_________________________</span>
+                <ul id="premium1Options">
+                    <li>Ad-free music listening</li>
+                    <br>
+                    <li>Group Session</li>
+                    <br>
+                    <li>Download 10k songs/device on 5 devices</li>
+                    <br>
+                    <li id="buyPlan1">
+                        <form action="https://www.spotify.com/in-en/plan/individual/" id="form3">
+                            <button id="buyplan1Button">Buy Plan</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <div id="premiumBox2">
+                <span id="Premiumtext7">1 month free</span>
+                <br>
+                <span id="Premiumtext8">One-Time plan available</span>
+                <br>
+                <span id="Premiumtext9">Student</span>
+                <br>
+                <span id="Premiumtext10">₹59/month after offer period</span>
+                <br>
+                <span id="Premiumtex11">1 account</span>
+                <span id="Premiumtext12">_________________________</span>
+                <ul id="premium2Options">
+                    <li>Discount for eligible students</li>
+                    <br>
+                    <li>Ad-free music listening</li>
+                    <br>
+                    <li>Group Session</li>
+                    <br>
+                    <li>Download 10k songs/device, on 5 devices per account`</li>
+                    <br>
+                    <li id="buyPlan2">
+                        <form action="https://www.spotify.com/in-en/plan/duo/" id="form4">
+                            <button id="buyplan2Button">Buy Plan</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div id="playPlaylist">
+        <span id="playlistHeading">Spotify Playlists</span>
+        <form action="index2.html" id="form5">
+            <button id="playlist1Button">
+                <div id="playlist1">
+                <img src="2000.jpeg" id="playlist1Photo">
+                <p id="playlist1Text">The perfect playlist to take you on a time machine</p>
+                <img src="greenplay.svg" id="greenPlayButton1">
+                </div>
+            </button>
+        </form>
+        <button onclick= playlistOpen() id="playlist2Button"><img src="greenplay.svg" id="greenPlayButton2"></button>
+            <div id="popUpWindowPlaylist">
+                <button id="closePlaylist" onclick=playlistClose()>X</button>
+                <br>
+                Wanna explore more music? Switch to spotify premium</div>
+            <div id="playlist2">
+                <img src="2010.jpeg" id="playlist2Photo">
+                <p id="playlist2Text">Ready to live in nostalgia again?</p>
+                
+            </div>
+        
+        
+        <button onclick= playlistOpen() id="playlist3Button"><img src="greenplay.svg" id="greenPlayButton3"></button>
+            <div id="popUpWindowPlaylist">
+                <button id="closePlaylist" onclick=playlistClose()>X</button>
+                <br>
+                Wanna explore more music? Switch to spotify premium</div>
+            <div id="playlist3">
+                <img src="2020.jpeg" id="playlist3Photo">
+                <p id="playlist3Text">The world of Genz...</p>
+                
+            </div>
+            
+        
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
